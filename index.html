@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+	 align-items: center;
+	 background: white;
+	 display: flex;
+	 height: 100vh;
+	 justify-content: center;
+}
+ @keyframes scroll {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(calc(-250px * 7));
+	}
+}
+ .slider {
+	 background: white;
+	 box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	 height: 100px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 width: 960px;
+}
+ .slider::before, .slider::after {
+	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	 content: "";
+	 height: 100px;
+	 position: absolute;
+	 width: 200px;
+	 z-index: 2;
+}
+ .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+ .slider::before {
+	 left: 0;
+	 top: 0;
+}
+ .slider .slide-track {
+	 animation: scroll 40s linear infinite;
+	 display: flex;
+	 width: calc(250px * 14);
+}
+ .slider .slide {
+	 height: 100px;
+	 width: 250px;
+}
+</style>
+</head>
+<body>
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="https://grammartop.com/wp-content/uploads/2020/11/totally-bb35312e248ca1396bd5dbe2df2526c7f70f7099.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://images.squarespace-cdn.com/content/v1/62d832e8ef0725746765c72e/d59120a4-b8f5-4ad8-9dd4-2125c76b1fec/yep+outline+bulb+color+outline.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://www.shutterstock.com/image-illustration/yes-word-pop-art-retro-260nw-1096973984.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://emojis.wiki/thumbs/emojis/winking-face.webp" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/YES-Snowboards-logo.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://logos.flamingtext.com/Word-Logos/very-design-sketch-name.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://t4.ftcdn.net/jpg/01/53/06/05/360_F_153060542_kK1x49h7lpH23UerDZZMEVjlNzvsJUou.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://images.squarespace-cdn.com/content/v1/60ef25cd9078fc435182da38/1d7a62bf-5b51-487c-a5f8-27faaf43198e/Completely+Pickled+-+Logo.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://keydifferences.com/wp-content/uploads/2018/05/much-vs-many.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Much_-_2013_logo.svg/1200px-Much_-_2013_logo.svg.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://www.shutterstock.com/image-illustration/obvious-text-on-red-grungy-260nw-1947640162.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://www.shutterstock.com/image-illustration/without-doubt-text-on-blue-260nw-2162856743.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://media.sketchfab.com/models/6605c7cc1da849e9bf50b3c8e408aa73/thumbnails/99858877ee4f4ab9a9953b39cd1f42f8/6093299b04ad49cdb7ab1fd8acdf247c.jpeg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVKhyyLjhKAjizJqs8N8jg7mH7bHWVXwUUg&usqp=CAU" height="100" width="250" alt="" />
+		</div>
+	</div>
+</div>
+</body>
+</html>
